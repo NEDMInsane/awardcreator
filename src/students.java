@@ -52,18 +52,18 @@ public class students {
 	
 	
 	private static String getAwards() {
-		System.out.println("Please enter student Awards (ACS, TG, DG, Academic Award, Flt Chief");
-		return input.userStringGetter();
+		System.out.println("Please enter student Awards (ACE, TG, DG, Academic Award, Flt Chief)");
+		return validation.awdValidator(input.userStringGetter());
 	}
 
 	private static String getBase() {
-		System.out.println("Please enter student Base/Squadron (Barkesdale/20 AMXS)");
-		return input.userStringGetter();
+		System.out.println("Please enter student Squadron (20 AMXS)");
+		return validation.sqValidator(input.userStringGetter());
 	}
 
 	private static String getAFSC() {
 		System.out.println("Please enter student AFSC w/ Shredout (2A933G)");
-		return input.userStringGetter();
+		return validation.careerValidator(input.userStringGetter());
 	}
 
 	private static String getName() {
@@ -73,6 +73,6 @@ public class students {
 
 	private static String getRank() {
 		System.out.println("Please enter student Rank");
-		return input.userStringGetter();
+		return validation.rankValidator(input.userStringGetter());
 	}
 }
