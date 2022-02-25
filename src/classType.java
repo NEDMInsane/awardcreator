@@ -35,4 +35,8 @@ public class classType {
 		}
 		return null;
 	}
+	
+	public static String getClassType(String clsType) {
+		
+	}
 }
