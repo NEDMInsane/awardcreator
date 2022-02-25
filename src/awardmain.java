@@ -8,7 +8,7 @@ public class awardmain {
 			mainMenu.CLMM();
 		} else if (mainArg.equals("-gui")) {
 			System.out.println("-gui was passed!");
-			//mainMenu.GUIMM();
+			mainMenu.GUIMM();
 		}
 			
 	}

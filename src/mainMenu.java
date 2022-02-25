@@ -1,3 +1,7 @@
+import java.awt.BorderLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
 
 public class mainMenu {
 
@@ -13,6 +17,22 @@ public class mainMenu {
 	}
 	
 	public static void GUIMM() {
-		//gui needs to be created still!
+		gui.main(null);
+		
+		/*/gui needs to be created still!
+		System.out.println("Starting GUI...");
+		JFrame window = new JFrame();
+		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		window.setSize(300, 300);
+		window.setTitle("Award Creator");
+		JButton mafButton = new JButton("AA/MAF");
+		JButton abButton = new JButton("AB");
+		JButton bbButton = new JButton("BB");
+		window.add(BorderLayout.PAGE_START, mafButton);
+		window.add(BorderLayout.CENTER, abButton);
+		window.add(BorderLayout.AFTER_LAST_LINE, bbButton);
+		
+		window.setVisible(true);
+		*/
 	}
 }

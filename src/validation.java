@@ -1,8 +1,7 @@
 
 public class validation {
 	//This is really only for command line, i could probably not even do this.
-	
-
+		
 	public static String awdValidator(String usrStrInput) {
 		//Checks for award types
 		while (!usrStrInput.matches("ACE") && 
