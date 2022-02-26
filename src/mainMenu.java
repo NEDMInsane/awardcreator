@@ -9,7 +9,7 @@ public class mainMenu {
 		//creating of Command-line main menu
 		System.out.println("Welcome to the Easy Award Creation Tool");
 		System.out.println("This is the command-line variant, for GUI use GUI Executable");
-		String classVar = classType.getClassType();
+		String classVar = classType.setClassType();
 		
 		System.out.println("Now time for students...");
 		students.printRoster(students.getStudRoster());

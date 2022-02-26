@@ -1,6 +1,6 @@
 
 public class classType {
-	public static String getClassType() {
+	public static String setClassType() {
 		System.out.println("What Class are you creating the Awards for? (AA or MAF, AB, BB)");
 		
 		Boolean running = true; 
@@ -28,7 +28,7 @@ public class classType {
 		if(response) {
 			return cls;
 		} else if (!response) {
-			getClassType();
+			setClassType();
 		} else {
 			System.out.println("Something Bad Happened!!!");
 			return null;
@@ -36,7 +36,8 @@ public class classType {
 		return null;
 	}
 	
-	public static String getClassType(String clsType) {
+	public static String setClassType(String clsType) {
+		return clsType;
 		
 	}
 }
