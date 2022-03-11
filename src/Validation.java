@@ -1,5 +1,5 @@
 
-public class validation {
+public class Validation {
 	//This is really only for command line, i could probably not even do this.
 		
 	public static String awdValidator(String usrStrInput) {

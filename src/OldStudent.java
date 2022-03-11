@@ -52,17 +52,17 @@ public class OldStudent {
 	
 	private static String getAwards() {
 		System.out.println("Please enter student Awards (ACE, TG, DG, Academic Award, Flt Chief)");
-		return validation.awdValidator(UserInput.userStringGetter());
+		return Validation.awdValidator(UserInput.userStringGetter());
 	}
 
 	private static String getBase() {
 		System.out.println("Please enter student Squadron (20 AMXS)");
-		return validation.sqValidator(UserInput.userStringGetter());
+		return Validation.sqValidator(UserInput.userStringGetter());
 	}
 
 	private static String getAFSC() {
 		System.out.println("Please enter student AFSC w/ Shredout (2A933G)");
-		return validation.careerValidator(UserInput.userStringGetter());
+		return Validation.careerValidator(UserInput.userStringGetter());
 	}
 
 	private static String getName() {
@@ -72,6 +72,6 @@ public class OldStudent {
 
 	private static String getRank() {
 		System.out.println("Please enter student Rank");
-		return validation.rankValidator(UserInput.userStringGetter());
+		return Validation.rankValidator(UserInput.userStringGetter());
 	}
 }

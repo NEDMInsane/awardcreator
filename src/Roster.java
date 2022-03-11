@@ -28,7 +28,7 @@ public class Roster {
 	private static void setStudRank() {
 
 		System.out.println("Enter student rank");
-		student.setRank(validation.rankValidator(UserInput.userStringGetter()));
+		student.setRank(Validation.rankValidator(UserInput.userStringGetter()));
 		
 	}
 	
@@ -47,7 +47,7 @@ public class Roster {
 	private static void setStudAFSC() {
 		
 		System.out.println("Please enter AFSC");		
-		student.setAFSC(validation.careerValidator(UserInput.userStringGetter()));
+		student.setAFSC(Validation.careerValidator(UserInput.userStringGetter()));
 	}
 	
 	private static void setStudBase() {
