@@ -1,7 +1,5 @@
-import java.awt.BorderLayout;
+import java.util.HashMap;
 
-import javax.swing.JButton;
-import javax.swing.JFrame;
 
 public class mainMenu {
 
@@ -12,7 +10,8 @@ public class mainMenu {
 		String classVar = classType.setClassType();
 		
 		System.out.println("Now time for students...");
-		students.printRoster(students.getStudRoster());
+		HashMap<Integer, Student> roster = Roster.createRoster();
+		Roster.printRoster(roster);
 		
 	}
 	

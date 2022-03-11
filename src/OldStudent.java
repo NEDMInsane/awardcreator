@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 
-public class students {
-	//This could probably be done way better! (Make student an object, then create objects for each student?)
+public class OldStudent {
 	public static ArrayList<String[]> getStudRoster(){
 		Boolean running = true;
 		ArrayList<String[]> roster = new ArrayList<String[]>();
