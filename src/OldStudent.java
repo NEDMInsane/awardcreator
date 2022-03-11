@@ -27,7 +27,7 @@ public class OldStudent {
 				System.out.println("Are there more students? Youve entered " + roster.size() + " students (Y/N)");
 				
 				//This will break out of for and while looks, this could probably be done better.
-				Boolean userinput = input.userBoolGetter();
+				Boolean userinput = UserInput.userBoolGetter();
 				if (!userinput) {
 					v++;
 					running = false;
@@ -52,26 +52,26 @@ public class OldStudent {
 	
 	private static String getAwards() {
 		System.out.println("Please enter student Awards (ACE, TG, DG, Academic Award, Flt Chief)");
-		return validation.awdValidator(input.userStringGetter());
+		return validation.awdValidator(UserInput.userStringGetter());
 	}
 
 	private static String getBase() {
 		System.out.println("Please enter student Squadron (20 AMXS)");
-		return validation.sqValidator(input.userStringGetter());
+		return validation.sqValidator(UserInput.userStringGetter());
 	}
 
 	private static String getAFSC() {
 		System.out.println("Please enter student AFSC w/ Shredout (2A933G)");
-		return validation.careerValidator(input.userStringGetter());
+		return validation.careerValidator(UserInput.userStringGetter());
 	}
 
 	private static String getName() {
 		System.out.println("Please enter student Name (First M. Last)");
-		return input.userStringGetter();
+		return UserInput.userStringGetter();
 	}
 
 	private static String getRank() {
 		System.out.println("Please enter student Rank");
-		return validation.rankValidator(input.userStringGetter());
+		return validation.rankValidator(UserInput.userStringGetter());
 	}
 }

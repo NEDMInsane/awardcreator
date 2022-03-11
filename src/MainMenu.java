@@ -1,13 +1,13 @@
 import java.util.HashMap;
 
 
-public class mainMenu {
+public class MainMenu {
 
 	public static void CLMM() {
 		//creating of Command-line main menu
 		System.out.println("Welcome to the Easy Award Creation Tool");
 		System.out.println("This is the command-line variant, for GUI use GUI Executable");
-		String classVar = classType.setClassType();
+		String classVar = ClassType.setClassType();
 		
 		System.out.println("Now time for students...");
 		HashMap<Integer, Student> roster = Roster.createRoster();
@@ -16,7 +16,7 @@ public class mainMenu {
 	}
 	
 	public static void GUIMM() {
-		gui.main(null);
+		GUI.main(null);
 		
 		/*/gui needs to be created still!
 		System.out.println("Starting GUI...");

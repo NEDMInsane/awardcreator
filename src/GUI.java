@@ -2,18 +2,18 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class gui {
+public class GUI {
 	
 	private JFrame mainFrame;
 	private JPanel mainPanel;
 	private JLabel headerLabel;
 	
-	public gui() {
+	public GUI() {
 		initGui();
 	}
 		
 	public static void main(String[] args) {
-		gui gui = new gui();
+		GUI gui = new GUI();
 		gui.showMMGui();
 	}
 	

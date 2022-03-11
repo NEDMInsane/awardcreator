@@ -12,7 +12,7 @@ public class validation {
 			!usrStrInput.matches("FC") &&
 			!usrStrInput.matches("Flight Chief")) {
 			System.out.println("Please enter a valid Award. (ACE, TG, DG, Academic Award, Flt Chief) Not " + usrStrInput);
-			usrStrInput = input.userStringGetter();
+			usrStrInput = UserInput.userStringGetter();
 		}
 		return usrStrInput;
 	}
@@ -40,7 +40,7 @@ public class validation {
 			!usrStrInput.matches("SMSGT") &&
 			!usrStrInput.matches("CMSGT")) {
 			System.out.println("Please enter a valid USAF Rank. (AMN, A1C, SRA, ...) Not " + usrStrInput);
-			usrStrInput = input.userStringGetter();
+			usrStrInput = UserInput.userStringGetter();
 			} 
 		return usrStrInput;		
 	}

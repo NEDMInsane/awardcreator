@@ -1,12 +1,12 @@
 
-public class classType {
+public class ClassType {
 	public static String setClassType() {
 		System.out.println("What Class are you creating the Awards for? (AA or MAF, AB, BB)");
 		
 		Boolean running = true; 
 		
 		while (running) {
-			String ewClass = input.userStringGetter();
+			String ewClass = UserInput.userStringGetter();
 			
 			if (ewClass.equals("AA") | ewClass.equals("MAF")) {
 				return classTypeConfirm("AA/MAF");
@@ -23,7 +23,7 @@ public class classType {
 	
 	public static String classTypeConfirm(String cls) {
 		System.out.println("You have selected " + cls + " correct? (Y/N)");
-		Boolean response = input.userBoolGetter();
+		Boolean response = UserInput.userBoolGetter();
 		
 		if(response) {
 			return cls;

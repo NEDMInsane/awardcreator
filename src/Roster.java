@@ -28,18 +28,18 @@ public class Roster {
 	private static void setStudRank() {
 
 		System.out.println("Enter student rank");
-		student.setRank(validation.rankValidator(input.userStringGetter()));
+		student.setRank(validation.rankValidator(UserInput.userStringGetter()));
 		
 	}
 	
 	private static void setStudName() {
 		
 		System.out.println("Whats the students First name?");
-		student.setFirstName(input.userStringGetter());
+		student.setFirstName(UserInput.userStringGetter());
 		System.out.println("Whats the students Middle initial?");
-		student.setMiddleInitial(input.userStringGetter());
+		student.setMiddleInitial(UserInput.userStringGetter());
 		System.out.println("Whats the students Last name?");
-		student.setLastName(input.userStringGetter());
+		student.setLastName(UserInput.userStringGetter());
 		System.out.println(student.getFullName());
 		
 	}
@@ -47,13 +47,13 @@ public class Roster {
 	private static void setStudAFSC() {
 		
 		System.out.println("Please enter AFSC");		
-		student.setAFSC(validation.careerValidator(input.userStringGetter()));
+		student.setAFSC(validation.careerValidator(UserInput.userStringGetter()));
 	}
 	
 	private static void setStudBase() {
 		
 		System.out.println("Enter Student Base/SQ");
-		student.setBase(input.userStringGetter());
+		student.setBase(UserInput.userStringGetter());
 		
 	}
 	
@@ -61,14 +61,14 @@ public class Roster {
 		
 		ArrayList<String> awards = new ArrayList<String>();
 				
-		awards.add(input.userStringGetter());
+		awards.add(UserInput.userStringGetter());
 		student.setAwards(awards);
 	}
 	
 
 	private static void setStudAdd() {
 		System.out.println("Are there anymore students? (Y/N)");
-		Boolean usrPrompt = input.userBoolGetter();
+		Boolean usrPrompt = UserInput.userBoolGetter();
 		
 		if (!usrPrompt) {
 			studentAdd = false;
