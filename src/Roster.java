@@ -40,7 +40,7 @@ public class Roster {
 		student.setMiddleInitial(UserInput.userStringGetter());
 		System.out.println("Whats the students Last name?");
 		student.setLastName(UserInput.userStringGetter());
-		System.out.println(student.getFullName());
+		//System.out.println(student.getFullName());
 		
 	}
 	
